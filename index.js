@@ -1,4 +1,4 @@
-let ResumeBtn=document.getElementById("resume1")
-ResumeBtn.onclick=()=>{
-  window.open("./images/fw21_0411-Nisha-Gupta-Resume.pdf", "_blank")
-}
+let ResumeBtn=document.querySelector("#nisha1")
+ResumeBtn.addEventListener("click",()=>{
+    window.open("./images/fw21_0411-Nisha-Gupta-Resume.pdf", "_blank")
+})
