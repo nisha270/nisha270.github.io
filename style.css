@@ -14,7 +14,7 @@ text-decoration: none;
 }
 body{
   background-color: rgb(97, 43, 43);
-/* background-color: black; */
+background-color: black;
 }
 .nav{
   border: 1px solid black;
@@ -91,17 +91,15 @@ body{
   border-radius: 1.9rem;
   font-size: 1.5rem;
 }
-.res{
+.resume{
   border: 1px solid black;
   padding: 0.5rem;
   background-color: #a4edd7;
   font: bold;
-  
   border-radius: .2rem;
 }
 .socials{
-  /* border: 1px solid black; */
-
+  border: 1px solid black;
   position: relative;
   margin-top: 3rem;
 }
