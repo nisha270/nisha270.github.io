@@ -16,7 +16,6 @@ background-color: black;
 .nav{
   /* border: 1px solid white; */
   width: 80%;
-  margin: auto;
   display: flex;
   font-weight: bold;
   justify-content: space-between;
