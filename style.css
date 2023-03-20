@@ -1,0 +1,38 @@
+ /* navbaar */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+  font-family: 'Lora', serif;
+font-family: 'Playfair Display', serif;
+color:white;
+text-decoration: none;
+background-color: black;
+}
+.nav{
+  /* border: 1px solid white; */
+  width: 80%;
+  margin: auto;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.nav_left{
+  /* border: 1px solid white; */
+}
+.nav_right ul{
+  /* border: 1px solid white; */
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.nav_right ul li{
+  margin-left: 2.5rem;
+}
+.nav_right ul li a:hover{
+  color: rgb(255, 6, 89);
+  border-bottom: .2rem solid rgb(255, 6, 89);
+  padding: .5rem 0;
+
+}
