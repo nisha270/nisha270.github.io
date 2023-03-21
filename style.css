@@ -17,7 +17,7 @@ body{
 background-color: black;
 }
 .nav{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 80%;
   height: auto;
   display: flex;
@@ -26,11 +26,11 @@ background-color: black;
   justify-content: space-between;
 }
 .nav_left{
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
 }
 .nav_right ul{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: auto;
   padding: 1rem;
   display: flex;
@@ -44,12 +44,15 @@ background-color: black;
   color: rgb(255, 6, 89);
   border-bottom: .2rem solid rgb(255, 6, 89);
   padding: .5rem 0;
-
 }
 
 /* home page*/
 .home{
-  border: 1px solid black;
+  background: linear-gradient(to bottom right, black, #464646);
+  width: 100%;
+}
+.home1{
+  /* border: 1px solid black; */
   width: 80%;
   height: auto;
   margin: 8rem auto ;
@@ -60,15 +63,28 @@ background-color: black;
   justify-content: space-around;
 }
 .home_left{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 50%;
 }
 .home_right{
-  border: 1px solid black;
-  width: 48%;
+  /* border: 1px solid black; */
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.hover_img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: auto;
+  height: auto;
+}
+.home_right:hover .hover_img{
+  display: block;
 }
 .home_right img{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: -3rem 3rem 0px 0px;
   border-radius: 5%;
   height: 80%;
@@ -85,21 +101,21 @@ background-color: black;
   font-size: 1.8rem;
 }
 .home_left >a{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: .5rem;
   background-color: blue;
   border-radius: 1.9rem;
   font-size: 1.5rem;
 }
 .resume{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 0.5rem;
   background-color: #a4edd7;
   font: bold;
   border-radius: .2rem;
 }
 .socials{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   position: relative;
   margin-top: 3rem;
 }
