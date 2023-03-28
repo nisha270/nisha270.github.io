@@ -1,24 +1,30 @@
  /* navbaar */
- @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
- /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Nunito  :ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito  :ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
 
 *{
     font-family: 'Lora', serif;
   font-family: 'Playfair Display', serif;
-  color:white;
+  
   text-decoration: none;
 
   }
-  body{
-    background-color: rgb(97, 43, 43);
+   body{
+    padding: 0px;
+    margin: 0px;
+    /* background-color: rgb(97, 43, 43); */
   background-color: black;
-  }
+  } 
   nav{
     height: 10px;
   }
   #nav-menu{
-    border: 1px solid black;
+    /* border: 1px solid black; */
   font-weight: bold;
   margin: auto;
   position: fixed;
@@ -33,11 +39,12 @@
   background-color: rgb(2, 2, 2);
   box-shadow: 0 1px 4px rgba(146,161,176,.3);
   }
-  .nav_left{
-    border: 1px solid black;
+  .nav_left h1 a{
+    /* border: 1px solid black; */
+    color: white;
   }
   .nav_right ul{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
     padding: 1rem;
     display: flex;
@@ -47,37 +54,43 @@
   .nav_right ul li{
     margin-left: 2.5rem;
   }
+  .nav_right ul li a{
+    color: white;
+  }
   .nav_right ul li a:hover{
     color: rgb(255, 6, 89);
     border-bottom: .2rem solid rgb(255, 6, 89);
     padding: .5rem 0;
   }
   /* home */
+  #home_sec{
+    /* border: 1px solid black; */
+    width: 100%;
+    /* background-color: black; */
+  }
   #home{
-    border: 1px solid black;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 80%;
+    color: black;
     height: auto;
-    margin: 8rem auto;
-    /* margin: auto; */
+    margin: 13rem auto 0rem auto;
+    margin-bottom: 0px;
     display: flex;
-  
     gap: 10rem;
     justify-content: space-around;
   }
   .home_left {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
   }
-  .home_right {
-    border: 1px solid black;
+  .home-img {
+    /* border: 1px solid black; */
     width: auto;
     height: auto;
-    position: relative;
   }
   
-  .home_right img {
-    border: 1px solid black;
+  .home-img img {
+    /* border: 1px solid black; */
     margin: -3rem 3rem 0px 0px;
     border-radius: 50%;
     height: 80%;
@@ -94,7 +107,7 @@
     font-size: 1.8rem;
   }
   .home_left > a {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0.5rem;
     background-color: blue;
     border-radius: 1.9rem;
@@ -104,11 +117,11 @@
     border: 1px solid black;
     padding: 0.5rem;
     background-color: #a4edd7;
-    font: bold;
+    font-weight: bolder;
     border-radius: 0.2rem;
   }
   .socials {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
     margin-top: 3rem;
   }
@@ -162,7 +175,56 @@
   }
   
   #about{
-    /* height: 1500px; */
+   /* border: 1px solid black; */
+   background-color: white;
+   color: black;
+   width: 100% ;
+   max-width: none;
+    margin: 13rem auto 0px;
+    
+  }
+  .me{
+    margin-top:-100px;
+    padding: 2.5rem 0px 0px 0px;
+    font-size:xx-large;
+  }
+  #about>h1{
+    text-align: center;
+  }
+  .about_left>img{
+    /* border: 1px solid black;     */
+    border-radius: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 2rem auto 0rem;
+    transform: scaleX(-1);
+    height: 80%;
+  }
+  .about_sec{
+    /* border: 1px solid black; */
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5rem auto 0px ;
+  }
+  .about_right{
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: 4rem auto;
+    height: auto;
+
+  }
+  #user-detail-name{
+    color: #7303a7;
+    font-size: xx-large;
+  }
+  #user-detail-intro{
+    text-decoration: none;
+    font-size: larger;
+    margin: 0px;
+    /* font-weight: 700; */
+  }
+  .about_right>p{
+    font-size:large;
   }
   #skills{
     /* height: 1500px; */
