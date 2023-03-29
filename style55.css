@@ -17,8 +17,9 @@
    body{
     padding: 0px;
     margin: 0px;
-    /* background-color: rgb(97, 43, 43); */
-  background-color: black;
+    background-color: rgb(97, 43, 43);
+  /* background-color: black; */
+
   } 
   nav{
     height: 10px;
@@ -64,40 +65,46 @@
   }
   /* home */
   #home_sec{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 100%;
     /* background-color: black; */
   }
   #home{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 80%;
     color: black;
     height: auto;
     margin: 13rem auto 0rem auto;
     margin-bottom: 0px;
     display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* display: grid; */
+    /* grid-template-rows: repeat(1, 1fr); */
     gap: 10rem;
     justify-content: space-around;
   }
   .home_left {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 50%;
   }
   .home-img {
-    /* border: 1px solid black; */
-    width: auto;
+    border: 1px solid black;
+    width: 50%;
     height: auto;
   }
   
   .home-img img {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: -3rem 3rem 0px 0px;
     border-radius: 50%;
     height: 80%;
   }
   
   .home_left {
+    border: 1px solid black;
     /* margin: 5rem 0rem 0rem 0rem; */
+    width: 50%;
   }
   .ft1 {
     font-size: 3.5rem;
@@ -204,6 +211,7 @@
     width: 80%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 2.5rem auto 0px ;
   }
   .about_right{
@@ -215,7 +223,8 @@
   }
   #user-detail-name{
     
-    color: #7303a7;
+    /* color: #7303a7; */
+    color: #d88a15;
     font-size: xx-large;
   }
   #user-detail-intro{
