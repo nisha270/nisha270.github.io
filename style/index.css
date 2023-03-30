@@ -1,0 +1,251 @@
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    
+}
+#big{
+    border: 0px solid rgb(60, 192, 34);
+}
+.sidebar{
+    border: 0px solid red;
+    /* background-color: red; */
+    background-color: black;
+    /* width: 434px; */
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 800px;
+    transition: transform 0.3s ease-in;
+    
+}
+.sidebar nav{
+    padding: 45px;
+
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: aqua;
+}
+.sidebar nav li a>button{
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 18px;
+    /* font-weight: 900; */
+    color:aqua;
+    background-color: transparent;
+    border: aqua 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+    /* border: 1px solid red; */
+}
+.container{
+    display: flex;
+    
+}
+.infocontainer{
+    /* background-color: rgb(138, 238, 118); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+.devinfo{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+.hello{
+font-size: 65px;
+
+}
+.name{
+font-size: 50px;
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about_a{
+font-size: 40px;
+}
+.aboutmore{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.buttons button{
+padding: 9px 14px;
+border-radius: 22px;
+color: white;
+background-color: dodgerblue;
+font-weight: bold;
+font-size: 21px;
+margin: 0 3px;
+margin-top: 20px;
+cursor: pointer;
+width: 15vw;
+}
+.buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.devpic img{
+  
+    height: 58vh;
+}
+
+.contactform {
+    padding: 0 34px;
+    padding-top: 144px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border: 0px solid green;
+color: white;
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    /* text-align: center; */
+    padding-left: 12px;
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+#emailHelp{
+    font-size: 11px;
+    color: rgb(25, 112, 47);
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+
+    flex-direction: row;
+}
+
+#form-check input{
+width: 24px;
+margin: 3px 0;
+}
+.intro h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 12px;
+}
+.intro p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 12px;
+}
+.skillcontainr{
+padding: 12px;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+.skill{
+    background-color: red;
+    width: 265px;
+    height: 6px;
+}
+.hundred{
+    width: 265px;
+    background-color: blueviolet;
+}
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+.t5{
+    width:75px;
+    background-color: yellow;
+}
+.sidebargo{
+    transform:translate(-443px,0);
+    position: absolute;
+}
+.hemburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    display: none;
+}
+.hem{
+    margin-top: 10px;
+    background-color: aqua;
+    position: fixed;
+    padding: 8px;
+}
+.cross{
+    margin-left: 170px;
+    margin-top: 10px;
+    color: #00c6ff;
+    background-color:aqua;
+    padding: 8px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#30ff00);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(transparent,#00c6ff) ;
+}
+
+@media (max-width:1200px) {
+    /* *{
+        background-color: none;
+    } */
+    /* .sidebar{
+        transform:translate(-443px,0);
+        position: absolute;
+    } */
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .cross{
+        position: fixed;
+    }
+    .hemburger{
+display: block;
+    }
+    /* .devpic{
+        display: none;
+    } */
+}
+

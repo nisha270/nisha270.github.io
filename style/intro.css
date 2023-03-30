@@ -1,0 +1,14 @@
+.container{
+    background: #050505;
+    color: white;
+    height: 100vh;
+}
+.sidebar{
+    position: absolute;
+}
+.infocontainer{
+    border: 0px solid green;
+    width: 60%;
+    margin: auto;
+    margin-top: 200px;
+}
