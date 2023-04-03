@@ -1,4 +1,17 @@
 
+// navbar
+var mainListDiv = document.getElementById("mainListDiv"),
+    mediaButton = document.getElementById("mediaButton");
+
+mediaButton.onclick = function () {
+    
+    "use strict";
+    
+    mainListDiv.classList.toggle("show_list");
+    mediaButton.classList.toggle("active");
+    
+};
+
 // resume view 
 let ResumeBtn=document.querySelector("#nisha1")
 ResumeBtn.addEventListener("click",()=>{
@@ -17,3 +30,5 @@ window.addEventListener('resize', () => {
     navRight.classList.remove('show');
   }
 });
+
+// Skills

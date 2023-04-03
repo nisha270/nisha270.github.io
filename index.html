@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style55.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media_query.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -16,30 +16,36 @@
 
 <body>
     <!-- navbar -->
-    <nav id="nav-menu">
-        <div class="nav_left">
-            <h1><a href="#home">𒆜Nisha</a></h1>
-        </div>
-        <div class="nav_right">
-
-            <ul>
-                <li><a href="#home" class="nav-link home">Home</a></li>
-                <li><a href="#about" class="nav-link about">About</a></li>
-                <li><a href="#skills" class="nav-link skills">Skills</a></li>
-                <li><a href="#projects" class="nav-link projects">Projects</a></li>
-                <li><a href="#contact" class="nav-link contact">Contact</a></li>
-                <li><a href="./images/fw21_0411-Nisha-Gupta-Resume.pdf" class="nav-link resume">Resume</a></li>
-            </ul>
-
-        </div>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">𒆜Nisha</a>
+            </div>
+            <div class="main_list" id="mainListDiv">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./images/fw21_0411-Nisha-Gupta-Resume.pdf" class="nav-link resume">Resume</a></li>
+                </ul>
+            </div>
+            <div class="media_button">
+                <button class="main_media_button" id="mediaButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- home section -->
     <section id="home_sec">
         <div id="home">
-            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="home_left">
-                <!-- <h1>Welcome to my portfolio</h1> -->
+            <div class="home_left">
+
                 <h1 class="ft1" style="color: #a4edd7;">Hi There, <br><span style="color: #a4edd7;">I'm</span> <span
                         style="color: #ff7b00;"> Nisha...</span></h1>
                 <p class="ft2" style="color: #ff7b00;">I Am Into <spa class="typing-text"></spa>
@@ -65,22 +71,22 @@
                 </div>
             </div>
             <div class="home-img">
-                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class=""
-                    src="/nisha270.github.io-1/images/" alt="nisha">
+                <img class="" src="./images/avataaars.png" alt="nisha">
             </div>
         </div>
     </section>
 
+    <!-- about -->
     <section style="width: 100% !important ; color: black;" id="about" class="about section">
         <h1 class="me"><i class="fas fa-user-alt"></i> &nbsp; About Me </h1>
         <div class="about_sec">
-            <div data-aos="flip-left" data-aos-duration="3000" class="about_left">
-                <img src="./images/border nisha.jpg" alt="">
+            <div class="about_left">
+                <img src="./images/border mirror nisha.jpg" alt="">
             </div>
             <div class="about_right">
-                <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" id="user-detail-name">I'm
-                    Nisha...</h1>
-                <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="user-detail-intro">A
+                <h1 id="user-detail-name">I'm
+                    Nisha...</h1><br>
+                <p id="user-detail-intro">A
                     Dedicated full-stock web
                     developer who is always
                     passionate about learning new
@@ -88,15 +94,14 @@
                     developing products that help in
                     making peoples lives better and
                     becoming integral part of an
-                    organization that help me grow.</p>
-                <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
-                    Known Languages: Java, Php, HTML, CSS, JavaScript.<br>
-                    Age: 21 <br><br>
+                    organization that help me grow.</p><br>
+                <p>
+                    Known Languages: Java, Php, HTML, CSS, JavaScript.<br><br>
                     Email : nishaguptag399@gmail.com <br><br>
                     Place : Navi Mumbai, Maharashtra <br><br>
-                </p>
+                </p><br>
                 <a class="res" style="background-color: #a4edd7;color: black;"
-                    href="./images/fw21_0411-Nisha-Gupta-Resume.pdf" class="resume">Resume&nbsp;> </a><br>
+                    href="./images/fw21_0411-Nisha-Gupta-Resume.pdf" class="resume">Resume&nbsp;></a><br>
             </div>
         </div>
 
@@ -104,13 +109,61 @@
 
     <!-- skills -->
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-        </ul>
+        <h1 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h1>
+
+        <div class="skill">
+            <h3 class="skillsTop">HTML5</h3>
+            <div class="skillsBottom">
+                <div class="progress">
+                    <div class="html progress-bar progress-bar-info" role="progressbar">
+                    </div>
+                </div>
+            </div>
+<br>
+            <h3 class="skillsTop">CSS</h3>
+
+            <div class="skillsBottom">
+                <div class="progress">
+                    <div class="css progress-bar progress-bar-info" role="progressbar">
+                    </div>
+                </div>
+            </div>
+<br>
+            <h3 class="skillsTop">javaScript</h3>
+
+            <div class="skillsBottom">
+                <div class="progress">
+                    <div class="jquery progress-bar progress-bar-info" role="progressbar"></div>
+                </div>
+            </div>
+<br>
+            <h3 class="skillsTop">Php</h3>
+
+            <div class="skillsBottom">
+                <div class="progress">
+                    <div class="javascript progress-bar progress-bar-info" role="progressbar">
+                    </div>
+                </div>
+            </div>
+<br>
+            <h3 class="skillsTop">MySql</h3>
+
+            <div class="skillsBottom">
+                <div class="progress">
+                    <div class="adobe progress-bar progress-bar-info" role="progressbar">
+                    </div>
+                </div>
+            </div>
+<br>
+            <h3 class="skillsTop">BootStrap</h3>
+
+            <div class="skillsBottom">
+                <div class="progress">
+                    <div class="ui progress-bar progress-bar-info" role="progressbar">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- projects -->
@@ -148,4 +201,14 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+    $(document).ready(function() {
+  $('.html').css('width', '90%');
+  $('.css').css('width', '80%');
+  $('.jquery').css('width', '75%');
+  $('.javascript').css('width', '60%');
+  $('.adobe').css('width', '80%');
+  $('.ui').css('width', '50%');
+});
 </script>
