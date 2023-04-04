@@ -15,7 +15,7 @@ mediaButton.onclick = function () {
 // resume view 
 let ResumeBtn=document.querySelector("#nisha1")
 ResumeBtn.addEventListener("click",()=>{
-    window.open("./images/fw21_0411-Nisha-Gupta-Resume.pdf", "_blank")
+    window.open("", "_blank")
 })
 
 const menuBtn = document.querySelector('.menu-btn');
@@ -32,3 +32,23 @@ window.addEventListener('resize', () => {
 });
 
 // Skills
+function fillProgressBars() {
+  var htmlProgress = document.getElementById("html-bar").querySelector(".progress");
+  var cssProgress = document.getElementById("css-bar").querySelector(".progress");
+  var jsProgress = document.getElementById("js-bar").querySelector(".progress");
+  var javaProgress = document.getElementById("java-bar").querySelector(".progress");
+  var phpProgress = document.getElementById("php-bar").querySelector(".progress");
+  var bootstrapProgress = document.getElementById("bootstrap-bar").querySelector(".progress");
+  var mysqlProgress = document.getElementById("mysql-bar").querySelector(".progress");
+
+  htmlProgress.style.width = "85%";
+  cssProgress.style.width = "80%";
+  jsProgress.style.width = "70%";
+  javaProgress.style.width = "80%";
+  phpProgress.style.width = "45%";
+  bootstrapProgress.style.width = "55%";
+  mysqlProgress.style.width = "70%";
+}
+
+fillProgressBars();
+
