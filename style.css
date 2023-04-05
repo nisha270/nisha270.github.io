@@ -420,6 +420,14 @@
       width: 70%;
       transition: width 1s ease-in-out;
     }
+    #git-bar .progress{
+      height: 20px;
+      border-radius:10px 15px 15px 10px;
+      background-color: #1b234a;
+      width: 80%;
+      transition: width 1s ease-in-out;
+    }
+    
     
     @media only screen and (max-width: 600px) {
       .progress-bar {
@@ -448,7 +456,7 @@
 }
 #education>p{
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .ed_main{
   /* border: 1px solid black; */
@@ -456,7 +464,7 @@
   height: auto;
   width: 60%;
   margin: 1.5rem auto;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .ed_main .box{
   display: flex;
@@ -487,3 +495,4 @@ color: blue;
 /* .ed_main .box .text h1{
 color: #7303a7;
 } */
+

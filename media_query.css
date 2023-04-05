@@ -1,13 +1,13 @@
 /* Medai qurey section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 975px) and (max-width: 1024px) {
     
   .container{
       margin: 0;
   }
   
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:975px) {
   
   .container{
       margin: 0;
@@ -25,7 +25,7 @@
   }
   
   .nav div.show_list{
-      height: 250px;
+      height: 285px;
   }
   
   .nav div.main_list ul{
@@ -55,3 +55,14 @@
       display: block;
   }
 }
+@media only screen and (max-width: 600px) {
+    .progress-bar {
+      width: 90%;
+    }
+  }
+/* @media screen and (max-width:920px) {
+.edmain .box {
+    display: flex;
+    flex-direction: row;
+}
+} */
