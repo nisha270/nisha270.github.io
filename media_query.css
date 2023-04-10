@@ -55,14 +55,42 @@
       display: block;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 630px) {
     .progress-bar {
-      width: 90%;
+      width: 95%;
+    }
+    .ed_main{
+      box-shadow: none;
+      align-items: center;
+    }
+    .ed_main .box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   
+    }
+    .ed_main .box img{
+      align-content: center;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .box .text{
+      text-align: center;
+      margin: 1% 0 2.5%;
+      padding: 5% ;
+      /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     }
   }
-/* @media screen and (max-width:920px) {
-.edmain .box {
-    display: flex;
-    flex-direction: row;
+@media only screen and (max-width:920px) {
+.ed_main{
+  width: 100%;
 }
-} */
+.progress-bar{
+  width: 99%;
+}
+.progress-container{
+ width: 95%;
+}
+.about_sec{
+  width: 100%;
+}
+}

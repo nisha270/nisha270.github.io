@@ -17,7 +17,7 @@
    body{
     padding: 0;
     margin: 0;
-    background-color: rgb(97, 43, 43);
+    /* background-color: rgb(97, 43, 43); */
   background-color: black;
 
   } 
@@ -176,8 +176,8 @@
     justify-content: space-around;
   }
   .home_left {
-    border: 1px solid black;
-    padding: 5% 0 0 0;
+    border: 1px solid rgb(230, 49, 49);
+    padding: 10% 0 0 0;
     width: 50%;
   }
   .home-img {
@@ -186,13 +186,18 @@
     /* width: 50%; */
     background-size: cover; 
     height: auto;
+
   }
   
   .home-img img {
-    border: 1px solid black;
-    margin: 0rem 3rem 0px 0px;
+    border: 0px solid rgb(191, 46, 46);
+    box-shadow: #a4edd7 0px 8px 24px, #a4edd7cf 0px 4px 56px, #a4edd77a 0px 6px 30px;
+    margin: 3rem 3rem 0px 0px;
     border-radius: 50%;
-    height: 80%;
+    height: 70%;
+   background-color: rgb(184, 224, 232);
+   /* box-shadow: whitesmoke 1px 5px ; */
+    /* background-color: rgb(252, 214, 168); */
   }
   
   .home_left {
@@ -280,39 +285,34 @@
    background-color: white;
    color: black;
    width: 100% ;
+   height: auto;
    max-width: none;
     margin: 13rem auto 0px;
-    /* padding: 2rem; */
+    text-align: center;
+    padding: 2rem;
   }
   .me{
-    margin-top:-100px;
+    /* margin-top:-100px; */
     padding: 2.5rem 0px 0px 0px;
     font-size:xx-large;
   }
   #about>h1{
     text-align: center;
   }
-  .about_left>img{
-    /* border: 1px solid black;     */
-    border-radius: 5%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    margin: 2rem auto 0rem;
-    /* transform:  scaleX(-1); */
-    height: 80%;
+  #w{
+    color: #7303a7;
   }
   .about_sec{
-    /* border: 1px solid black; */
+    border: 1px solid rgb(255, 255, 255);
     width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    
     margin: 2rem auto 0px ;
   }
   .about_right{
     
     /* border: 1px solid black; */
-    width: 50%;
-    margin: 4rem auto;
+    width: 70%;
+    margin: 2rem auto;
     height: auto;
 
   }
@@ -345,6 +345,9 @@
     padding: 0 0 7vh 0;
     margin: auto 0;
     font-size: xx-large;
+  }
+  #A{
+    color: #8cf5d5;
   }
   .progress-container {
       height: 100%;
@@ -429,11 +432,11 @@
     }
     
     
-    @media only screen and (max-width: 600px) {
+    /* @media only screen and (max-width: 600px) {
       .progress-bar {
         width: 90%;
       }
-    }
+    } */
     
  /* Education */
  #education{
@@ -462,7 +465,7 @@
   /* border: 1px solid black; */
   border-radius: 10px;
   height: auto;
-  width: 60%;
+  width: 70%;
   margin: 1.5rem auto;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
@@ -471,13 +474,14 @@
   gap: 3%;
 }
 .box .text{
-  height: 50%;
+  height: auto;
+  width: auto;
   margin-top: 40px;
   /* border: 1px solid black; */
   vertical-align: middle;
 }
 .ed_main .box img{
-  /* border: 1px solid black; */
+  /* border: 1px solid rgb(164, 164, 164); */
   height: 160px;
   width: 200px;
   border-radius: 10px;
