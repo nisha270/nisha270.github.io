@@ -52,3 +52,18 @@ function fillProgressBars() {
 
 fillProgressBars();
 
+// git calander
+
+// GitHubCalendar(".calendar", "nisha270", {
+//   responsive: true,
+//   global_stats: false,
+//   tooltips: true,
+// });
+
+GitHubCalendar(".calendar", "nisha270");
+// or enable responsive functionality
+GitHubCalendar(".calendar", "clrsurya11", { responsive: true });
+
+
+// contact page
+

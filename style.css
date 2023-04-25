@@ -191,11 +191,11 @@
   
   .home-img img {
     border: 0px solid rgb(191, 46, 46);
-    box-shadow: #a4edd7 0px 8px 24px, #a4edd7cf 0px 4px 56px, #a4edd77a 0px 6px 30px;
+    /* box-shadow: #a4edd7 0px 8px 24px, #a4edd7cf 0px 4px 56px, #a4edd77a 0px 6px 30px; */
     margin: 3rem 3rem 0px 0px;
     border-radius: 50%;
     height: 70%;
-   background-color: rgb(184, 224, 232);
+   /* background-color: rgb(184, 224, 232); */
    /* box-shadow: whitesmoke 1px 5px ; */
     /* background-color: rgb(252, 214, 168); */
   }
@@ -503,11 +503,246 @@ color: #7303a7;
 
 
 
+/* git calander */
+#git_calendar{
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  width: auto;
+  height: auto;
+  
+}
+#git_calendar h1{
+margin: 2% auto ;
+text-align: center;
+font-size: xx-large;
+}
+.c{
+  color: #4543a9;
+}
+.st2{
+  display: flex;
+  flex-direction: row;
+}
+.all_cal{
+  border: 1px solid rgb(43, 43, 43);
+  margin: auto auto 2% auto ;
+  width: 70%;
+  background-color: #000000;
+  border-radius: 10px;
+
+}
+
+/* projects */
+.projects {
+  padding: 25px 0;
+  /* border: 1px solid black; */
+  background-color:#303031;
+  color: white;
+}
+.pr{
+  color: yellow;
+}
+.heading {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.project-card {
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  border: 1px solid yellow;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(139, 137, 137, 0.1);
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(255, 245, 245, 0.2);
+  width: 310px;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.project_btns{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin: auto;
+padding: 2%;
+}
+.project_btns button{
+  margin: auto;
+  padding: 2%;
+  font-size: 90%;
+  border-radius: 8px;
+  border-color: yellow;
+}
+.project_btns button:hover{
+  font-weight: bold;
+  background-color:yellow;
+  border:1px solid black;
+  
+}
 
 
-
-
-
+/* contact page */
+/* contact section starts */
+.contact{
+  background: #000000;
+  min-height: 60vh;
+}
+.contact h2{
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+  margin: 2% auto;
+  font-weight: 900;
+}
+.contact .container{
+  max-width: 1050px;
+  width: 100%;
+  background: rgb(41, 41, 41);
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.contact .container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+}
+.contact .content .image-box{
+  max-width: 60%;
+  margin-left: 4rem;
+}
+.contact .content .image-box img{
+  width: 80%;
+  height: 30rem;
+  /* position: relative; */
+}
+.contact .content form{
+  width: 45%;
+  margin-right: 3.5rem;
+}
+form .form-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-group .field{
+  height: 50px;
+  display: flex;
+  /* position: relative; */
+  margin: 1rem;
+  width: 100%;
+}
+form i{
+  /* position: absolute; */
+  top: 50%;
+  left: 18px;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input,
+form .message textarea{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 16px 0 48px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 51, 51);
+  background: #e5ecfb;
+}
+.field input::placeholder,
+.message textarea::placeholder{
+  color: rgb(51, 51, 51);
+}
+.field input:focus,
+.message textarea:focus{
+  padding-left: 47px;
+  border: 2px solid rgb(115, 3, 167);
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: rgb(115, 3, 167);
+}
+form .message{
+  /* position: relative; */
+  margin: 1rem;
+  width: 100%;
+}
+form .message i{
+  top: 25px;
+  font-size: 20px;
+  left: 15px;
+}
+form .message textarea{
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 12px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar{
+  width: 0px;
+}
+form .button-area{
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+}
+.button-area button{
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: #069cad;
+  box-shadow: 0px 0px 10px rgba(48, 227, 247, 0.6);
+  transition: 0.3s ease;
+  font-family: 'Nunito',sans-serif;
+}
+.button-area button:hover{
+  background: #1ce8ecf5;
+}
+.button-area span{
+  font-size: 17px;
+  padding: 1rem;
+  display: none;
+}
+.button-area button i{
+  /* position: relative; */
+  top: 6px; left: 2px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  color: #fff;
+}
+.button-area button:hover i{
+  left: 8px;
+}
 
 
 /* footer section */
@@ -517,12 +752,15 @@ color: #7303a7;
   background: rgb(40, 40, 40);
 }
 .footer .box-container{
+  /* border: 1px solid pink; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .footer .box-container .box{
-  flex: 1 1 25rem;
+  /* border: 1px solid pink; */
+  width: min-content;
+  flex: 1 1 10rem;
   margin: 2.5rem;
 }
 .footer .box-container .box h3{
