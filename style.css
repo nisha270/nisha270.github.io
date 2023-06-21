@@ -196,7 +196,6 @@ nav {
   padding: 1rem 2.25rem;
   backdrop-filter:blur(10px);
   z-index: 1000;
-  /* background-color: hsla(var(--second-hue), 32%, 16%, 0.8); */
 }
 .nav__list{
     display: flex;
