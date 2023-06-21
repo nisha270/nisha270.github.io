@@ -1,69 +1,68 @@
-
-// navbar
-var mainListDiv = document.getElementById("mainListDiv"),
-    mediaButton = document.getElementById("mediaButton");
-
-mediaButton.onclick = function () {
-    
-    "use strict";
-    
-    mainListDiv.classList.toggle("show_list");
-    mediaButton.classList.toggle("active");
-    
-};
-
-// resume view 
-let ResumeBtn=document.querySelector("#nisha1")
-ResumeBtn.addEventListener("click",()=>{
-    window.open("", "_blank")
-})
-
-const menuBtn = document.querySelector('.menu-btn');
-const navRight = document.querySelector('.nav_right');
-
-menuBtn.addEventListener('click', () => {
-  navRight.classList.toggle('show');
-});
-
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 768) {
-    navRight.classList.remove('show');
-  }
-});
-
-// Skills
-function fillProgressBars() {
-  var htmlProgress = document.getElementById("html-bar").querySelector(".progress");
-  var cssProgress = document.getElementById("css-bar").querySelector(".progress");
-  var jsProgress = document.getElementById("js-bar").querySelector(".progress");
-  var javaProgress = document.getElementById("java-bar").querySelector(".progress");
-  var phpProgress = document.getElementById("php-bar").querySelector(".progress");
-  var bootstrapProgress = document.getElementById("bootstrap-bar").querySelector(".progress");
-  var mysqlProgress = document.getElementById("mysql-bar").querySelector(".progress");
-
-  htmlProgress.style.width = "85%";
-  cssProgress.style.width = "80%";
-  jsProgress.style.width = "70%";
-  javaProgress.style.width = "80%";
-  phpProgress.style.width = "45%";
-  bootstrapProgress.style.width = "55%";
-  mysqlProgress.style.width = "70%";
-}
-
-fillProgressBars();
-
-// git calander
-
-// GitHubCalendar(".calendar", "nisha270", {
-//   responsive: true,
-//   global_stats: false,
-//   tooltips: true,
+// api for joke ;
+//  function makeajoke(){
+//     let space=document.querySelector(".joke");
+//     let setup=document.querySelector(".joke_setup");
+//     space.innerText="";
+//     setup.innerText=""
+//     let api='https://v2.jokeapi.dev/joke/Programming';
+//    try{
+//     fetch(api)
+//     .then((response) => response.json())
+//     .then((data) => {if(!data.delivery){
+//         space.innerText=data.joke;
+       
+//     }
+// else{
+//     setup.innerText="Setup:"+data.setup
+//     console.log(data)
+//     space.innerText="Delivery:"+ data.delivery
+// }
 // });
+//    }catch(err){
+//     // space.innerText="Because they didn't Node how to Express themself!"
+//    }
 
-GitHubCalendar(".calendar", "nisha270");
-// or enable responsive functionality
-GitHubCalendar(".calendar", "clrsurya11", { responsive: true });
+
+// }
+
+// makeajoke()
+// document.querySelector('.opendrawer').addEventListener('click',()=>{openNav()})
+// document.querySelector('.closebtn').addEventListener('click',()=>{closeNav()})
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "450px";
+//   }
+  
+  // function closeNav() {
+  //   document.getElementById("mySidenav").style.width = "0px";
+  // }
+
+  GitHubCalendar(".calendar", "nisha270");
+  // or enable responsive functionality
+  GitHubCalendar(".calendar", "nisha270", { responsive: true });
 
 
-// contact page
+  AOS.init();
 
+  const sections = document.querySelectorAll('section[id]')
+    
+const scrollActive = () =>{
+  	const scrollY = window.pageYOffset
+    console.log(sections)
+	sections.forEach(current =>{
+		const sectionHeight = current.offsetHeight,
+			  sectionTop = current.offsetTop - 58,
+			  sectionId = current.getAttribute('id'),
+			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+			sectionsClass.classList.add('active-link')
+		}else{
+			sectionsClass.classList.remove('active-link')
+		}                                                    
+	})
+}
+window.addEventListener('scroll', scrollActive)
+
+const openresume=()=>{
+  window.open("https://drive.google.com/file/d/1HEEdQwPZOr50iRuH0D-svR-J-jam4AnG/view?usp=sharing")
+}
