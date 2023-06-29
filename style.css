@@ -22,9 +22,7 @@
   --tiny-font-size: .625rem;
 }
 body {
-  /* background-color: var(--body-color);
-   */
-  /* overflow-x: hidden; */
+  
   background-color: #000;
  
 }
@@ -33,7 +31,8 @@ body {
   margin: 0;
   color: white;
   font-size: 105%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  /* font-family: sans-serif; */
   scroll-behavior: smooth;
 }
 
@@ -78,6 +77,8 @@ nav {
 
 .container img {
     animation: upto .5s linear infinite alternate;
+    width: 70%;
+    margin: auto;
 } 
 
 .feature{
